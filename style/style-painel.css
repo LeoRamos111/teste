@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;900&family=Poppins:wght@500&family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-color: #000;
+    width: 90%;
+}
+.cabecalho {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+
+.cabecalho .container-left {
+    color: white;
+}
+.cabecalho .container-left h1{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 30px;
+}
+.cabecalho .container-left #trainer{
+    color: rgb(212, 212, 212);
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -15px;
+}
+.cabecalho .container-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    
+}
+.cabecalho .container-center a{
+    color: #FAFF00;
+    font-size: 18px;
+    font-weight: bold;
+}
+.cabecalho .container-right a{
+    padding: 14px 28px;
+    background-color: #FAFF00;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+}
+.sessao-01 {
+    width: 100%;
+    height: calc(100vh - 114px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sessao-01 .container-left {
+    width: 600px;
+    color: white;
+}
+.sessao-01 .container-left h5{
+    color: #FAFF00;
+    font-weight: 0;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.sessao-01 .container-left h1{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+.sessao-01 .container-left span{
+    color: #FAFF00;
+    font-weight: bold;
+    font-size: 40px;
+}
+.sessao-01 .container-left p{
+    margin-top: 10px;
+    color: rgb(233, 233, 233);
+}
+.sessao-01 .container-left button{
+    padding: 12px 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: #FAFF00;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.sessao-01 .container-right img{
+    width: 500px;
+    border-radius: 50%;
+    border: 2px solid #FAFF00;
+}
+
+
+
+
+
+.sessao-02 {
+    margin-top: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+.sessao-02 .container-welcome{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao-02 h1{
+    font-size: 38px;
+    color: white;
+    font-weight: 400;
+}
+.sessao-02 h2{
+    font-size: 38px;
+    color: white;
+    font-weight: 400;
+    margin-top: -15px;
+}
+.sessao-02 span{
+    font-size: 38px;
+    color: #FAFF00;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+
+.sessao-02 .container-treinos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.sessao-02 .container-treinos .card-segunda,.card-terca,.card-quarta,.card-quinta,.card-sexta{
+    border: 2px solid #FAFF00;
+    border-radius: 15px;
+    width: 360px;
+    height: 550px;
+    text-align: center;
+    padding: 10px 12px;
+    position: relative;
+    background-color: rgb(14, 14, 14);
+}
+.sessao-02 .container-treinos h1{
+    font-size: 26px;
+    font-weight: 600;
+}
+.sessao-02 .container-treinos h2{
+    font-size: 24px;
+    font-weight: 0;
+}
+.sessao-02 .container-treinos p{
+    color: azure;
+    font-size: 18px;
+}
+
+.sessao-02 .container-treinos .opcoes {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    gap: 5px;
+
+}
+.sessao-02 .container-treinos .opcoes button{
+    padding: 6px 12px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 15px;
+    color: rgb(37, 37, 37);
+}
+.sessao-02 .container-treinos .opcoes #adicionar{
+    background-color: green;
+}
+.sessao-02 .container-treinos .opcoes #alterar{
+    background-color: yellow;
+    
+}
+.sessao-02 .container-treinos .opcoes #remover{
+    background-color: rgb(255, 0, 0);
+}
+
+
+@media (max-width: 785px) {
+    .cabecalho {
+        padding-top: 50px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .cabecalho .container-center {
+        display: none;
+    }
+
+    main .sessao-01{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+        padding: 20px;
+
+    }
+    main .sessao-01 .container-left {
+        width: 90%;
+    }
+    main .sessao-01 .container-left p{
+        width: 320px;
+    }
+    main .sessao-01 .container-left h5{
+        font-size: 12px;
+    }
+    main .sessao-01 .container-left h1{
+        font-size: 26px;
+    }
+    main .sessao-01 .container-left span{
+        font-size: 28px;
+    }
+    main .sessao-01 .container-left button{
+        width: 100%;
+
+    }
+    main .sessao-01 .container-right img{
+        width: 300px;
+    }
+    main .sessao-02 .container-welcome h1{
+        font-size: 28px;
+
+    }
+    main .sessao-02 .container-welcome h2{
+        font-size: 28px;
+
+    }
+    main .sessao-02 .container-welcome span{
+        font-size: 30px;
+
+    }
+
+    main .sessao-02 .container-treinos {
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    main .sessao-02 .container-treinos .card-segunda,.card-terca,.card-quarta,.card-quinta,.card-sexta{
+        width: 80%;
+    }
+}
